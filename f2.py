@@ -19,6 +19,7 @@ def main():
 	if m in nm:
 		i = nm.index(m)
 		f(ls[i],r)
+		ls[i](r)
 
 
 if(__name__==('__main__')): main()

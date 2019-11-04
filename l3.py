@@ -7,7 +7,8 @@ def check(arg):
 	NAME = 'Python'
 	objs = len(O)
 	if(DBG): print('Length of objects:',str(objs))
-	REQ = [f'{VO} {O[0]}, {NAME}',f'{VO} {O[1]}, {NAME}',f'{VO} {O[2]}, {NAME}',]
+	REQ = [f'{VO} {O[n]}, {NAME}' for n in range(objs)]
+	if(DBG): print(REQ)
 	if arg in REQ:
 		r = REQ.index(arg)
 		return(r)

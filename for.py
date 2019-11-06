@@ -1,7 +1,6 @@
 a = ['Hello, ','Python!',]
 l = []
-for s in a:
-	l.append(s)
+for s in a: l.append(s)
 print(l)
 
 
